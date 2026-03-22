@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0B0D10] text-white antialiased overflow-x-hidden;
+  }
+}
+
+/* Compact UI: One-line headlines */
+.compact-headline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glow-shadow:hover {
+  box-shadow: 0 0 20px rgba(108, 92, 231, 0.15);
+}
+
