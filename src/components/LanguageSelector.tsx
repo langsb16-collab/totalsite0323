@@ -6,7 +6,23 @@ interface LanguageSelectorProps {
   setLang: (lang: string) => void;
 }
 
-const langs = ["ko","en","zh","ja","ru","hi","pt","id","ar","af","es","vi","pl","th","uz"];
+const langs = [
+  { code: "ko", name: "한국어" },
+  { code: "en", name: "English" },
+  { code: "zh", name: "中文" },
+  { code: "ja", name: "日本語" },
+  { code: "ru", name: "Русский" },
+  { code: "hi", name: "हिन्दी" },
+  { code: "pt", name: "Português" },
+  { code: "id", name: "Bahasa Indonesia" },
+  { code: "ar", name: "العربية" },
+  { code: "af", name: "Afrikaans" },
+  { code: "es", name: "Español" },
+  { code: "vi", name: "Tiếng Việt" },
+  { code: "pl", name: "Polski" },
+  { code: "th", name: "ไทย" },
+  { code: "uz", name: "O'zbekcha" }
+];
 
 export default function LanguageSelector({ lang, setLang }: LanguageSelectorProps) {
   return (
@@ -15,11 +31,11 @@ export default function LanguageSelector({ lang, setLang }: LanguageSelectorProp
       <select 
         value={lang} 
         onChange={(e) => setLang(e.target.value)}
-        className="bg-transparent text-xs font-medium text-white outline-none cursor-pointer uppercase"
+        className="bg-transparent text-xs font-medium text-white outline-none cursor-pointer"
       >
         {langs.map(l => (
-          <option key={l} value={l} className="bg-[#16191E] text-white">
-            {l}
+          <option key={l.code} value={l.code} className="bg-[#16191E] text-white">
+            {l.name}
           </option>
         ))}
       </select>
