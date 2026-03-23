@@ -111,7 +111,7 @@ function Card({ item, index, t }: CardProps) {
     >
       <div className={`absolute -inset-0.5 rounded-2xl bg-gradient-to-br ${style.gradient} opacity-0 blur-lg transition duration-500 group-hover:opacity-10`} />
       
-      <div className="relative flex h-full flex-col rounded-2xl border border-white/10 bg-[#0F1115] p-4 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-[#16191E]">
+      <div className="relative flex h-full flex-col rounded-2xl border border-white/10 bg-[#0F1115] p-3 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-[#16191E] hover:shadow-xl hover:shadow-purple-500/20">
         <div className="mb-3 flex items-center justify-between">
           <div className={`rounded-lg bg-white/5 p-2 ${style.accent} transition-colors duration-300 group-hover:bg-white/10`}>
             <Icon size={18} />
@@ -119,11 +119,11 @@ function Card({ item, index, t }: CardProps) {
           <ExternalLink size={14} className="text-gray-600 transition-colors duration-300 group-hover:text-white" />
         </div>
 
-        <h3 className="compact-headline mb-1 text-base font-semibold tracking-tight text-white">
+        <h3 className="compact-headline mb-1 text-sm font-semibold tracking-tight text-white">
           {name}
         </h3>
 
-        <p className="mb-4 flex-grow text-xs leading-relaxed text-gray-400 line-clamp-2">
+        <p className="mb-3 flex-grow text-xs leading-relaxed text-gray-400 line-clamp-2">
           {desc}
         </p>
 
@@ -151,8 +151,11 @@ export default function App() {
   const [category, setCategory] = useState("all");
   const [isMobile, setIsMobile] = useState(false);
 
-  // Guest System
+  // Guest System + Document Title
   useEffect(() => {
+    // Set document title
+    document.title = "플랫폼 인포메이션";
+    
     let uid = localStorage.getItem("uid");
     if (!uid) {
       uid = crypto.randomUUID();
@@ -188,39 +191,36 @@ export default function App() {
   }, [search, category, lang]);
 
   return (
-    <div className="min-h-screen bg-[#0B0D10] px-4 py-6 font-sans md:px-8 md:py-10">
-      <div className="mx-auto max-w-7xl">
+    <div className="min-h-screen bg-[#0B0D10] font-sans">
+      <div className="w-full">
         {/* Header (Language Selector) */}
-        <div className="flex justify-end mb-4">
+        <div className="flex justify-end px-4 py-2">
           <LanguageSelector lang={lang} setLang={setLang} />
         </div>
 
         {/* Header Content */}
-        <header className="mb-8 text-center md:mb-12">
+        <header className="px-4 py-2 text-center">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <h1 className="compact-headline mb-2 text-2xl font-bold tracking-tight text-white md:text-4xl">
+            <h1 className="compact-headline text-lg font-bold tracking-tight text-white whitespace-nowrap">
               {t("header.title")}
             </h1>
-            <p className="mx-auto max-w-2xl text-sm font-bold text-gray-300">
-              {t("header.subtitle")}
-            </p>
           </motion.div>
         </header>
 
         {/* Search + Filter */}
-        <div className="mb-8 space-y-4">
-          <div className="relative mx-auto max-w-xl">
+        <div className="px-4 mb-3 space-y-3">
+          <div className="relative w-full">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" size={16} />
             <input
               type="text"
               placeholder={t("button.search") + "..."}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full rounded-xl border border-white/10 bg-white/5 py-3 pl-10 pr-4 text-sm text-white outline-none transition-all focus:border-[#6C5CE7]/50 focus:bg-white/10"
+              className="w-full rounded-lg border border-white/10 bg-[#111] p-2 pl-10 text-white outline-none transition-all focus:border-[#6C5CE7]/50"
             />
           </div>
 
@@ -242,27 +242,29 @@ export default function App() {
         </div>
 
         {/* Card Grid */}
-        <AnimatePresence mode="popLayout">
-          {filteredPlatforms.length > 0 ? (
-            <motion.div 
-              layout
-              className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
-            >
-              {filteredPlatforms.map((item, index) => (
-                <Card key={item.id} item={item} index={index} t={t} />
-              ))}
-            </motion.div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="flex h-48 flex-col items-center justify-center rounded-2xl border border-dashed border-white/10 text-gray-500"
-            >
-              <Search size={32} className="mb-2 opacity-20" />
-              <p className="text-sm">{t("search.no_results")}</p>
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <div className="px-2">
+          <AnimatePresence mode="popLayout">
+            {filteredPlatforms.length > 0 ? (
+              <motion.div 
+                layout
+                className="grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+              >
+                {filteredPlatforms.map((item, index) => (
+                  <Card key={item.id} item={item} index={index} t={t} />
+                ))}
+              </motion.div>
+            ) : (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="flex h-48 flex-col items-center justify-center rounded-2xl border border-dashed border-white/10 text-gray-500"
+              >
+                <Search size={32} className="mb-2 opacity-20" />
+                <p className="text-sm">{t("search.no_results")}</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
 
         {/* Floating Systems */}
         <FAQ t={t} isMobile={isMobile} />
