@@ -247,7 +247,7 @@ export default function App() {
             {filteredPlatforms.length > 0 ? (
               <motion.div 
                 layout
-                className="grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
+                className="grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4"
               >
                 {filteredPlatforms.map((item, index) => (
                   <Card key={item.id} item={item} index={index} t={t} />
