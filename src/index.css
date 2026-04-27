@@ -7,74 +7,89 @@
 }
 
 /* ===========================
-   CSS Variables for Theme
+   DARK MODE (Default)
    =========================== */
-:root {
-  --bg-primary: #0B0D10;
-  --bg-secondary: #161618;
-  --bg-card: #0F1115;
-  --bg-card-hover: #16191E;
-  --text-primary: #ffffff;
-  --text-secondary: #b0b0b0;
-  --text-tertiary: #666666;
-  --border-color: rgba(255, 255, 255, 0.1);
-  --border-hover: rgba(255, 255, 255, 0.2);
-  --input-bg: #111111;
-  --shadow-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Light Mode Variables */
-body.light-mode {
-  --bg-primary: #f5f5f5;
-  --bg-secondary: #ffffff;
-  --bg-card: #ffffff;
-  --bg-card-hover: #f8f8f8;
-  --text-primary: #1a1a1a;
-  --text-secondary: #555555;
-  --text-tertiary: #888888;
-  --border-color: rgba(0, 0, 0, 0.15);
-  --border-hover: rgba(0, 0, 0, 0.3);
-  --input-bg: #f0f0f0;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-}
-
 @layer base {
   body {
     @apply antialiased overflow-x-hidden;
-    background-color: var(--bg-primary) !important;
-    color: var(--text-primary) !important;
-    transition: background-color 0.3s ease, color 0.3s ease;
     font-family: var(--font-sans);
+    background-color: #0B0D10;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
+}
 
-  /* Override Tailwind text colors with CSS variables */
-  .text-white { color: var(--text-primary) !important; }
-  .text-gray-300 { color: var(--text-secondary) !important; }
-  .text-gray-400 { color: var(--text-secondary) !important; }
-  .text-gray-500 { color: var(--text-tertiary) !important; }
-  .text-gray-600 { color: var(--text-tertiary) !important; }
+/* ===========================
+   LIGHT MODE
+   =========================== */
+body.light-mode {
+  background-color: #f5f5f5 !important;
+  color: #1a1a1a !important;
+}
 
-  /* Card backgrounds */
-  .bg-\\[\\#0F1115\\] { 
-    background-color: var(--bg-card) !important; 
-  }
-  .bg-\\[\\#16191E\\] { 
-    background-color: var(--bg-card-hover) !important; 
-  }
-  .bg-\\[\\#161618\\] { 
-    background-color: var(--bg-secondary) !important; 
-  }
-  .bg-\\[\\#0B0D10\\] { 
-    background-color: var(--bg-primary) !important; 
-  }
+/* Override card backgrounds in light mode */
+body.light-mode [class*="bg-[#0F1115]"],
+body.light-mode [class*="bg-[#16191E]"],
+body.light-mode [class*="bg-[#161618]"] {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
 
-  /* Border colors */
-  .border-white\\/10 { 
-    border-color: var(--border-color) !important; 
-  }
-  .border-white\\/20 { 
-    border-color: var(--border-hover) !important; 
-  }
+/* Override text colors in light mode */
+body.light-mode .text-white {
+  color: #1a1a1a !important;
+}
+
+body.light-mode .text-gray-300,
+body.light-mode .text-gray-400 {
+  color: #555555 !important;
+}
+
+body.light-mode .text-gray-500,
+body.light-mode .text-gray-600 {
+  color: #888888 !important;
+}
+
+/* Override border colors in light mode */
+body.light-mode .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.light-mode .border-white\/20 {
+  border-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Override background opacity in light mode */
+body.light-mode .bg-white\/5,
+body.light-mode .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Override input background in light mode */
+body.light-mode input[type="text"],
+body.light-mode input[type="search"] {
+  background-color: #f0f0f0 !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #1a1a1a !important;
+}
+
+body.light-mode input::placeholder {
+  color: #888888 !important;
+}
+
+/* Company info card in light mode */
+body.light-mode .company-info-pulse {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Category buttons in light mode */
+body.light-mode button:not([class*="bg-[#6C5CE7]"]) {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: #1a1a1a !important;
+}
+
+body.light-mode button:hover:not([class*="bg-[#6C5CE7]"]) {
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 /* Compact UI: One-line headlines */
