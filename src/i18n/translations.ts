@@ -1,8 +1,21 @@
 export const translations: Record<string, any> = {
   ko: {
     header: { title: "Platform Information Hub", subtitle: "제작 개발 협의 텔레그램 HERB4989" },
-    button: { search: "검색", visit: "바로가기", close: "닫기", send: "전송", translate: "번역" },
+    button: { search: "검색", visit: "바로가기", close: "닫기", send: "전송", translate: "번역", rnd: "R&D 개발범위" },
     search: { no_results: "검색 결과가 없습니다." },
+    company: {
+      title: "AI LINK SOFT (에이아이 링크 소프트)",
+      representative: "대표",
+      representative_name: "박진홍",
+      contact: "연락처",
+      contact_number: "010-3391-3697",
+      email: "이메일",
+      email_address: "soma8284@hanmail.net",
+      industry: "업종",
+      industry_type: "정보통신업",
+      business: "사업내용",
+      business_desc: "응용소프트웨어 개발 및 공급원"
+    },
     faq: {
       title: "자주 묻는 질문",
       items: [
@@ -60,8 +73,21 @@ export const translations: Record<string, any> = {
   },
   en: {
     header: { title: "Platform Information Hub", subtitle: "Development Consultation Telegram HERB4989" },
-    button: { search: "Search", visit: "Visit", close: "Close", send: "Send", translate: "Translate" },
+    button: { search: "Search", visit: "Visit", close: "Close", send: "Send", translate: "Translate", rnd: "R&D Development Scope" },
     search: { no_results: "No results found." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "CEO",
+      representative_name: "Park Jin Hong",
+      contact: "Contact",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Industry",
+      industry_type: "Information & Communication",
+      business: "Business",
+      business_desc: "Application Software Development & Supply"
+    },
     faq: {
       title: "FAQ",
       items: [
@@ -119,8 +145,21 @@ export const translations: Record<string, any> = {
   },
   zh: {
     header: { title: "平台信息枢纽", subtitle: "制作开发洽谈 Telegram HERB4989" },
-    button: { search: "搜索", visit: "访问", close: "关闭", send: "发送", translate: "翻译" },
+    button: { search: "搜索", visit: "访问", close: "关闭", send: "发送", translate: "翻译", rnd: "研发范围" },
     search: { no_results: "未找到搜索结果。" },
+    company: {
+      title: "AI LINK SOFT（艾琳克软件）",
+      representative: "代表",
+      representative_name: "朴镇洪",
+      contact: "联系方式",
+      contact_number: "010-3391-3697",
+      email: "邮箱",
+      email_address: "soma8284@hanmail.net",
+      industry: "行业",
+      industry_type: "信息通信业",
+      business: "业务内容",
+      business_desc: "应用软件开发及供应"
+    },
     faq: {
       title: "常见问题",
       items: [
@@ -161,8 +200,21 @@ export const translations: Record<string, any> = {
   },
   ja: {
     header: { title: "プラットフォーム情報ハブ", subtitle: "制作・開発相談 Telegram HERB4989" },
-    button: { search: "検索", visit: "訪問", close: "閉じる", send: "送信", translate: "翻訳" },
+    button: { search: "検索", visit: "訪問", close: "閉じる", send: "送信", translate: "翻訳", rnd: "R&D開発範囲" },
     search: { no_results: "検索結果がありません。" },
+    company: {
+      title: "AI LINK SOFT（エーアイリンクソフト）",
+      representative: "代表",
+      representative_name: "パク・ジンホン",
+      contact: "連絡先",
+      contact_number: "010-3391-3697",
+      email: "メール",
+      email_address: "soma8284@hanmail.net",
+      industry: "業種",
+      industry_type: "情報通信業",
+      business: "事業内容",
+      business_desc: "応用ソフトウェア開発及び供給"
+    },
     faq: {
       title: "よくある質問",
       items: [
@@ -203,8 +255,21 @@ export const translations: Record<string, any> = {
   },
   ru: {
     header: { title: "Информационный хаб платформ", subtitle: "Консультация по разработке Telegram HERB4989" },
-    button: { search: "Поиск", visit: "Посетить", close: "Закрыть", send: "Отправить", translate: "Перевести" },
+    button: { search: "Поиск", visit: "Посетить", close: "Закрыть", send: "Отправить", translate: "Перевести", rnd: "Область разработки R&D" },
     search: { no_results: "Результатов не найдено." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Представитель",
+      representative_name: "Пак Джин Хон",
+      contact: "Контакт",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Отрасль",
+      industry_type: "Информационные технологии",
+      business: "Сфера деятельности",
+      business_desc: "Разработка и поставка прикладного ПО"
+    },
     faq: {
       title: "Часто задаваемые вопросы",
       items: [
@@ -245,8 +310,21 @@ export const translations: Record<string, any> = {
   },
   hi: {
     header: { title: "प्लेटफ़ॉर्म सूचना केंद्र", subtitle: "विकास परामर्श टेलीग्राम HERB4989" },
-    button: { search: "खोजें", visit: "देखें", close: "बंद करें", send: "भेजें", translate: "अनुवाद" },
+    button: { search: "खोजें", visit: "देखें", close: "बंद करें", send: "भेजें", translate: "अनुवाद", rnd: "R&D विकास क्षेत्र" },
     search: { no_results: "कोई परिणाम नहीं मिला।" },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "प्रतिनिधि",
+      representative_name: "पार्क जिन होंग",
+      contact: "संपर्क",
+      contact_number: "010-3391-3697",
+      email: "ईमेल",
+      email_address: "soma8284@hanmail.net",
+      industry: "उद्योग",
+      industry_type: "सूचना और संचार",
+      business: "व्यवसाय",
+      business_desc: "एप्लिकेशन सॉफ़्टवेयर विकास और आपूर्ति"
+    },
     faq: {
       title: "सामान्य प्रश्न",
       items: [
@@ -287,8 +365,21 @@ export const translations: Record<string, any> = {
   },
   pt: {
     header: { title: "Centro de Informações da Plataforma", subtitle: "Consulta de Desenvolvimento Telegram HERB4989" },
-    button: { search: "Buscar", visit: "Visitar", close: "Fechar", send: "Enviar", translate: "Traduzir" },
+    button: { search: "Buscar", visit: "Visitar", close: "Fechar", send: "Enviar", translate: "Traduzir", rnd: "Escopo de Desenvolvimento R&D" },
     search: { no_results: "Nenhum resultado encontrado." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Representante",
+      representative_name: "Park Jin Hong",
+      contact: "Contato",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Indústria",
+      industry_type: "Tecnologia da Informação",
+      business: "Negócio",
+      business_desc: "Desenvolvimento e Fornecimento de Software"
+    },
     faq: {
       title: "Perguntas Frequentes",
       items: [
@@ -329,8 +420,21 @@ export const translations: Record<string, any> = {
   },
   id: {
     header: { title: "Pusat Informasi Platform", subtitle: "Konsultasi Pengembangan Telegram HERB4989" },
-    button: { search: "Cari", visit: "Kunjungi", close: "Tutup", send: "Kirim", translate: "Terjemahkan" },
+    button: { search: "Cari", visit: "Kunjungi", close: "Tutup", send: "Kirim", translate: "Terjemahkan", rnd: "Ruang Lingkup Pengembangan R&D" },
     search: { no_results: "Hasil tidak ditemukan." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Perwakilan",
+      representative_name: "Park Jin Hong",
+      contact: "Kontak",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Industri",
+      industry_type: "Teknologi Informasi",
+      business: "Bisnis",
+      business_desc: "Pengembangan dan Pasokan Perangkat Lunak"
+    },
     faq: {
       title: "Pertanyaan Umum",
       items: [
@@ -371,8 +475,21 @@ export const translations: Record<string, any> = {
   },
   ar: {
     header: { title: "مركز معلومات المنصة", subtitle: "استشارة تطوير تيليجرام HERB4989" },
-    button: { search: "بحث", visit: "زيارة", close: "إغلاق", send: "إرسال", translate: "ترجمة" },
+    button: { search: "بحث", visit: "زيارة", close: "إغلاق", send: "إرسال", translate: "ترجمة", rnd: "نطاق تطوير البحث والتطوير" },
     search: { no_results: "لم يتم العثور على نتائج." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "الممثل",
+      representative_name: "بارك جين هونغ",
+      contact: "جهة الاتصال",
+      contact_number: "010-3391-3697",
+      email: "البريد الإلكتروني",
+      email_address: "soma8284@hanmail.net",
+      industry: "الصناعة",
+      industry_type: "تكنولوجيا المعلومات",
+      business: "الأعمال",
+      business_desc: "تطوير وتوريد البرامج التطبيقية"
+    },
     faq: {
       title: "الأسئلة الشائعة",
       items: [
@@ -413,8 +530,21 @@ export const translations: Record<string, any> = {
   },
   af: {
     header: { title: "Platform Inligtingsentrum", subtitle: "Ontwikkelingskonsultasie Telegram HERB4989" },
-    button: { search: "Soek", visit: "Besoek", close: "Sluit", send: "Stuur", translate: "Vertaal" },
+    button: { search: "Soek", visit: "Besoek", close: "Sluit", send: "Stuur", translate: "Vertaal", rnd: "R&D Ontwikkelingsomvang" },
     search: { no_results: "Geen resultate gevind nie." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Verteenwoordiger",
+      representative_name: "Park Jin Hong",
+      contact: "Kontak",
+      contact_number: "010-3391-3697",
+      email: "E-pos",
+      email_address: "soma8284@hanmail.net",
+      industry: "Bedryf",
+      industry_type: "Inligtingstegnologie",
+      business: "Besigheid",
+      business_desc: "Toepassingssagteware-ontwikkeling en -voorsiening"
+    },
     faq: {
       title: "Gereelde Vrae",
       items: [
@@ -455,8 +585,21 @@ export const translations: Record<string, any> = {
   },
   es: {
     header: { title: "Centro de Información de la Plataforma", subtitle: "Consulta de Desarrollo Telegram HERB4989" },
-    button: { search: "Buscar", visit: "Visitar", close: "Cerrar", send: "Enviar", translate: "Traducir" },
+    button: { search: "Buscar", visit: "Visitar", close: "Cerrar", send: "Enviar", translate: "Traducir", rnd: "Alcance de Desarrollo R&D" },
     search: { no_results: "No se encontraron resultados." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Representante",
+      representative_name: "Park Jin Hong",
+      contact: "Contacto",
+      contact_number: "010-3391-3697",
+      email: "Correo electrónico",
+      email_address: "soma8284@hanmail.net",
+      industry: "Industria",
+      industry_type: "Tecnología de la Información",
+      business: "Negocio",
+      business_desc: "Desarrollo y Suministro de Software de Aplicación"
+    },
     faq: {
       title: "Preguntas frecuentes",
       items: [
@@ -497,8 +640,21 @@ export const translations: Record<string, any> = {
   },
   vi: {
     header: { title: "Trung tâm Thông tin Nền tảng", subtitle: "Tư vấn Phát triển Telegram HERB4989" },
-    button: { search: "Tìm kiếm", visit: "Truy cập", close: "Đóng", send: "Gửi", translate: "Dịch" },
+    button: { search: "Tìm kiếm", visit: "Truy cập", close: "Đóng", send: "Gửi", translate: "Dịch", rnd: "Phạm vi Phát triển R&D" },
     search: { no_results: "Không tìm thấy kết quả." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Đại diện",
+      representative_name: "Park Jin Hong",
+      contact: "Liên hệ",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Ngành",
+      industry_type: "Công nghệ Thông tin",
+      business: "Kinh doanh",
+      business_desc: "Phát triển và Cung cấp Phần mềm Ứng dụng"
+    },
     faq: {
       title: "Câu hỏi thường gặp",
       items: [
@@ -539,8 +695,21 @@ export const translations: Record<string, any> = {
   },
   pl: {
     header: { title: "Centrum Informacji o Platformie", subtitle: "Konsultacje rozwojowe Telegram HERB4989" },
-    button: { search: "Szukaj", visit: "Odwiedź", close: "Zamknij", send: "Wyślij", translate: "Tłumacz" },
+    button: { search: "Szukaj", visit: "Odwiedź", close: "Zamknij", send: "Wyślij", translate: "Tłumacz", rnd: "Zakres rozwoju R&D" },
     search: { no_results: "Nie znaleziono wyników." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Przedstawiciel",
+      representative_name: "Park Jin Hong",
+      contact: "Kontakt",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Branża",
+      industry_type: "Technologia informacyjna",
+      business: "Biznes",
+      business_desc: "Rozwój i dostawa oprogramowania aplikacyjnego"
+    },
     faq: {
       title: "Często zadawane pytania",
       items: [
@@ -581,8 +750,21 @@ export const translations: Record<string, any> = {
   },
   th: {
     header: { title: "ศูนย์ข้อมูลแพลตฟอร์ม", subtitle: "ปรึกษาการพัฒนา Telegram HERB4989" },
-    button: { search: "ค้นหา", visit: "เข้าชม", close: "ปิด", send: "ส่ง", translate: "แปล" },
+    button: { search: "ค้นหา", visit: "เข้าชม", close: "ปิด", send: "ส่ง", translate: "แปล", rnd: "ขอบเขตการพัฒนา R&D" },
     search: { no_results: "ไม่พบผลลัพธ์" },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "ตัวแทน",
+      representative_name: "Park Jin Hong",
+      contact: "ติดต่อ",
+      contact_number: "010-3391-3697",
+      email: "อีเมล",
+      email_address: "soma8284@hanmail.net",
+      industry: "อุตสาหกรรม",
+      industry_type: "เทคโนโลยีสารสนเทศ",
+      business: "ธุรกิจ",
+      business_desc: "การพัฒนาและจัดหาซอฟต์แวร์แอพพลิเคชัน"
+    },
     faq: {
       title: "คำถามที่พบบ่อย",
       items: [
@@ -623,8 +805,21 @@ export const translations: Record<string, any> = {
   },
   uz: {
     header: { title: "Platforma ma'lumotlar markazi", subtitle: "Rivojlanish bo'yicha maslahat Telegram HERB4989" },
-    button: { search: "Qidirish", visit: "Kirish", close: "Yopish", send: "Yuborish", translate: "Tarjima" },
+    button: { search: "Qidirish", visit: "Kirish", close: "Yopish", send: "Yuborish", translate: "Tarjima", rnd: "R&D rivojlantirish doirasi" },
     search: { no_results: "Natijalar topilmadi." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Vakillik",
+      representative_name: "Park Jin Hong",
+      contact: "Aloqa",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Sanoat",
+      industry_type: "Axborot texnologiyasi",
+      business: "Biznes",
+      business_desc: "Ilova dasturlarini ishlab chiqish va yetkazib berish"
+    },
     faq: {
       title: "Ko'p so'raladigan savollar",
       items: [
@@ -662,11 +857,83 @@ export const translations: Record<string, any> = {
     },
     categories: { all: "Hammasi", legal: "Huquqiy", ai: "AI", medical: "Tibbiy", security: "Xavfsizlik", commerce: "Tijorat", insurance: "Sug'urta", community: "Jamiyat", social: "Ijtimoiy", local: "Mahalliy", iot: "Xavfsizlik", finance: "Moliya", web3: "Web3" },
     platforms: { legal: { name: "AI LEGAL", desc: "Huquqiy tahlil va strategiya" }, visionu: { name: "VISION U", desc: "AI patentlari va avtomatlashtirish" }, doctor: { name: "AI Doctor CDSS", desc: "Tibbiy qarorlarni qo'llab-quvvatlash" }, fraud: { name: "FraudGuard AI", desc: "Real vaqtdagi firibgarlikni aniqlash" }, commerce: { name: "AI Global Commerce", desc: "Avtomatlashtirilgan tijorat operatsiyalari" }, insurance: { name: "AI Insurance", desc: "Ekspert zararlarini baholash" }, vietnam: { name: "Vietnam K-Town", desc: "Mahalliy ma'lumotlar va biznes" }, factarena: { name: "Fact Arena", desc: "Faktlarga asoslangan munozara" }, jeonrado: { name: "Jeonrado Life", desc: "Mintaqaviy hayot platformasi" }, safepro: { name: "Safe Pro", desc: "Sanoat xavfsizligi AI" }, partner: { name: "AI Life Partner", desc: "AI kotibi xizmati" }, snaptax: { name: "Snap Tax", desc: "Oddiy soliq avtomatizatsiyasi" }, usdt: { name: "USDT Freelancer", desc: "Global USDT savdosi" }, romantic: { name: "Romantic World", desc: "AI rasmlarni tiklash" }, klink: { name: "K-Link", desc: "Global hamjamiyat tarmog'i" }, ckorea: { name: "C-Korea Connect", desc: "Koreyadagi Xitoy tarmog'i" } }
+  },
+  fr: {
+    header: { title: "Centre d'Information de la Plateforme", subtitle: "Consultation de Développement Telegram HERB4989" },
+    button: { search: "Rechercher", visit: "Visiter", close: "Fermer", send: "Envoyer", translate: "Traduire", rnd: "Portée du Développement R&D" },
+    search: { no_results: "Aucun résultat trouvé." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Représentant",
+      representative_name: "Park Jin Hong",
+      contact: "Contact",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Industrie",
+      industry_type: "Technologies de l'information",
+      business: "Activité",
+      business_desc: "Développement et fourniture de logiciels d'application"
+    },
+    faq: {
+      title: "Questions fréquentes",
+      items: []
+    },
+    categories: { all: "Tout", legal: "Juridique", ai: "IA", medical: "Médical", security: "Sécurité", commerce: "Commerce", insurance: "Assurance", community: "Communauté", social: "Social", local: "Local", iot: "Sécurité", finance: "Finance", web3: "Web3" },
+    platforms: { legal: { name: "AI LEGAL", desc: "Analyse juridique et stratégie" }, visionu: { name: "VISION U", desc: "Brevets IA et automatisation" }, doctor: { name: "AI Doctor CDSS", desc: "Aide à la décision médicale" }, fraud: { name: "FraudGuard AI", desc: "Détection de fraude en temps réel" }, commerce: { name: "AI Global Commerce", desc: "Opérations commerciales automatisées" }, insurance: { name: "AI Insurance", desc: "Évaluation experte des pertes" }, vietnam: { name: "Vietnam K-Town", desc: "Informations locales et affaires" }, factarena: { name: "Fact Arena", desc: "Discussion basée sur les faits" }, jeonrado: { name: "Jeonrado Life", desc: "Plateforme de vie régionale" }, safepro: { name: "Safe Pro", desc: "IA pour la sécurité industrielle" }, partner: { name: "AI Life Partner", desc: "Service de secrétaire IA" }, snaptax: { name: "Snap Tax", desc: "Automatisation fiscale simple" }, usdt: { name: "USDT Freelancer", desc: "Trading USDT mondial" }, romantic: { name: "Romantic World", desc: "Restauration de photos par IA" }, klink: { name: "K-Link", desc: "Réseau communautaire mondial" }, ckorea: { name: "C-Korea Connect", desc: "Réseau chinois en Corée" } }
+  },
+  de: {
+    header: { title: "Plattform-Informationszentrum", subtitle: "Entwicklungsberatung Telegram HERB4989" },
+    button: { search: "Suchen", visit: "Besuchen", close: "Schließen", send: "Senden", translate: "Übersetzen", rnd: "F&E-Entwicklungsumfang" },
+    search: { no_results: "Keine Ergebnisse gefunden." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Vertreter",
+      representative_name: "Park Jin Hong",
+      contact: "Kontakt",
+      contact_number: "010-3391-3697",
+      email: "E-Mail",
+      email_address: "soma8284@hanmail.net",
+      industry: "Industrie",
+      industry_type: "Informationstechnologie",
+      business: "Geschäft",
+      business_desc: "Entwicklung und Bereitstellung von Anwendungssoftware"
+    },
+    faq: {
+      title: "Häufig gestellte Fragen",
+      items: []
+    },
+    categories: { all: "Alle", legal: "Rechtlich", ai: "KI", medical: "Medizinisch", security: "Sicherheit", commerce: "Handel", insurance: "Versicherung", community: "Gemeinschaft", social: "Sozial", local: "Lokal", iot: "Sicherheit", finance: "Finanzen", web3: "Web3" },
+    platforms: { legal: { name: "AI LEGAL", desc: "Rechtsanalyse und Strategie" }, visionu: { name: "VISION U", desc: "KI-Patente und Automatisierung" }, doctor: { name: "AI Doctor CDSS", desc: "Medizinische Entscheidungsunterstützung" }, fraud: { name: "FraudGuard AI", desc: "Echtzeit-Betrugserkennung" }, commerce: { name: "AI Global Commerce", desc: "Automatisierte Handelsabläufe" }, insurance: { name: "AI Insurance", desc: "Experten-Schadensbewertung" }, vietnam: { name: "Vietnam K-Town", desc: "Lokale Informationen und Geschäft" }, factarena: { name: "Fact Arena", desc: "Faktenbasierte Diskussion" }, jeonrado: { name: "Jeonrado Life", desc: "Regionale Lebensplattform" }, safepro: { name: "Safe Pro", desc: "KI für industrielle Sicherheit" }, partner: { name: "AI Life Partner", desc: "KI-Sekretärdienst" }, snaptax: { name: "Snap Tax", desc: "Einfache Steuerautomatisierung" }, usdt: { name: "USDT Freelancer", desc: "Globaler USDT-Handel" }, romantic: { name: "Romantic World", desc: "KI-Fotowiederherstellung" }, klink: { name: "K-Link", desc: "Globales Gemeinschaftsnetzwerk" }, ckorea: { name: "C-Korea Connect", desc: "Chinesisches Netzwerk in Korea" } }
+  },
+  it: {
+    header: { title: "Centro Informazioni della Piattaforma", subtitle: "Consulenza per lo Sviluppo Telegram HERB4989" },
+    button: { search: "Cerca", visit: "Visita", close: "Chiudi", send: "Invia", translate: "Traduci", rnd: "Ambito di Sviluppo R&S" },
+    search: { no_results: "Nessun risultato trovato." },
+    company: {
+      title: "AI LINK SOFT",
+      representative: "Rappresentante",
+      representative_name: "Park Jin Hong",
+      contact: "Contatto",
+      contact_number: "010-3391-3697",
+      email: "Email",
+      email_address: "soma8284@hanmail.net",
+      industry: "Settore",
+      industry_type: "Tecnologia dell'informazione",
+      business: "Attività",
+      business_desc: "Sviluppo e Fornitura di Software Applicativi"
+    },
+    faq: {
+      title: "Domande frequenti",
+      items: []
+    },
+    categories: { all: "Tutto", legal: "Legale", ai: "IA", medical: "Medico", security: "Sicurezza", commerce: "Commercio", insurance: "Assicurazione", community: "Comunità", social: "Sociale", local: "Locale", iot: "Sicurezza", finance: "Finanza", web3: "Web3" },
+    platforms: { legal: { name: "AI LEGAL", desc: "Analisi legale e strategia" }, visionu: { name: "VISION U", desc: "Brevetti IA e automazione" }, doctor: { name: "AI Doctor CDSS", desc: "Supporto alle decisioni mediche" }, fraud: { name: "FraudGuard AI", desc: "Rilevamento frodi in tempo reale" }, commerce: { name: "AI Global Commerce", desc: "Operazioni commerciali automatizzate" }, insurance: { name: "AI Insurance", desc: "Valutazione danni esperta" }, vietnam: { name: "Vietnam K-Town", desc: "Informazioni locali e affari" }, factarena: { name: "Fact Arena", desc: "Discussione basata sui fatti" }, jeonrado: { name: "Jeonrado Life", desc: "Piattaforma di vita regionale" }, safepro: { name: "Safe Pro", desc: "IA per la sicurezza industriale" }, partner: { name: "AI Life Partner", desc: "Servizio segretario IA" }, snaptax: { name: "Snap Tax", desc: "Automatizzazione fiscale semplice" }, usdt: { name: "USDT Freelancer", desc: "Trading USDT globale" }, romantic: { name: "Romantic World", desc: "Restauro foto IA" }, klink: { name: "K-Link", desc: "Rete comunitaria globale" }, ckorea: { name: "C-Korea Connect", desc: "Rete cinese in Corea" } }
   }
 };
 
 // Fill missing FAQ items with English for other languages
-const langCodes = ["ko","en","zh","ja","ru","hi","pt","id","ar","af","es","vi","pl","th","uz"];
+const langCodes = ["ko","en","zh","ja","ru","hi","pt","id","ar","af","es","vi","pl","th","uz","fr","de","it"];
 langCodes.forEach(code => {
   if (translations[code]) {
     // Fallback FAQ

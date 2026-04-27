@@ -171,12 +171,15 @@ export default function App() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Theme Toggle Effect
+  // Theme Toggle Effect - Apply light-mode class to body
   useEffect(() => {
+    console.log('Theme changed, isDark:', isDark);
     if (isDark) {
       document.body.classList.remove("light-mode");
+      console.log('Removed light-mode class');
     } else {
       document.body.classList.add("light-mode");
+      console.log('Added light-mode class');
     }
   }, [isDark]);
 
@@ -234,28 +237,28 @@ export default function App() {
         >
           <div className="company-info-pulse bg-[#161618] border border-white/10 rounded-xl p-4">
             <h3 className="text-xl font-bold text-white mb-3">
-              AI LINK SOFT (에이아이 링크 소프트)
+              {t("company.title")}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-300 text-sm">
               <p className="flex items-center">
-                <span className="inline-block w-20 font-semibold text-gray-400">대표</span>
-                <span>박진홍</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">{t("company.representative")}</span>
+                <span>{t("company.representative_name")}</span>
               </p>
               <p className="flex items-center">
-                <span className="inline-block w-20 font-semibold text-gray-400">연락처</span>
-                <span>010-3391-3697</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">{t("company.contact")}</span>
+                <span>{t("company.contact_number")}</span>
               </p>
               <p className="flex items-center">
-                <span className="inline-block w-20 font-semibold text-gray-400">이메일</span>
-                <span>soma8284@hanmail.net</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">{t("company.email")}</span>
+                <span>{t("company.email_address")}</span>
               </p>
               <p className="flex items-center">
-                <span className="inline-block w-20 font-semibold text-gray-400">업종</span>
-                <span>정보통신업</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">{t("company.industry")}</span>
+                <span>{t("company.industry_type")}</span>
               </p>
               <p className="flex items-center md:col-span-2">
-                <span className="inline-block w-20 font-semibold text-gray-400">사업내용</span>
-                <span>응용소프트웨어 개발 및 공급원</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">{t("company.business")}</span>
+                <span>{t("company.business_desc")}</span>
               </p>
             </div>
           </div>
@@ -276,14 +279,14 @@ export default function App() {
               />
             </div>
 
-            {/* R&D 개발범위 Button */}
+            {/* R&D 개발범위 Button - Multilingual */}
             <a
               href="https://youtu.be/GSGFA8SuCBk"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-3 bg-[#2a2a2e] text-white rounded-lg border border-[#444] text-sm font-medium transition-all hover:bg-[#3d3d42] hover:border-[#666] whitespace-nowrap"
+              className="rnd-button px-4 py-3 bg-[#2a2a2e] text-white rounded-lg border border-[#444] text-sm font-semibold transition-all hover:bg-[#3d3d42] hover:border-[#666] whitespace-nowrap"
             >
-              R&D 개발범위
+              {t("button.rnd")}
             </a>
           </div>
 

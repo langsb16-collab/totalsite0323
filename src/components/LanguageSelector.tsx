@@ -21,7 +21,10 @@ const langs = [
   { code: "vi", name: "Tiếng Việt" },
   { code: "pl", name: "Polski" },
   { code: "th", name: "ไทย" },
-  { code: "uz", name: "O'zbekcha" }
+  { code: "uz", name: "O'zbekcha" },
+  { code: "fr", name: "Français" },
+  { code: "de", name: "Deutsch" },
+  { code: "it", name: "Italiano" }
 ];
 
 export default function LanguageSelector({ lang, setLang }: LanguageSelectorProps) {
