@@ -6,9 +6,38 @@
   --font-display: "Outfit", sans-serif;
 }
 
+/* CSS Variables for Theme */
+:root {
+  --bg-primary: #0B0D10;
+  --bg-secondary: #161618;
+  --bg-card: #0F1115;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #666666;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
+  --input-bg: #111111;
+}
+
+/* Light Mode */
+body.light-mode {
+  --bg-primary: #f5f5f5;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --text-tertiary: #888888;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --border-hover: rgba(0, 0, 0, 0.2);
+  --input-bg: #f0f0f0;
+}
+
 @layer base {
   body {
-    @apply bg-[#0B0D10] text-white antialiased overflow-x-hidden;
+    @apply text-white antialiased overflow-x-hidden;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 
@@ -53,4 +82,5 @@
 .company-info-pulse {
   animation: pulse-glow 2s infinite ease-in-out;
 }
+
 

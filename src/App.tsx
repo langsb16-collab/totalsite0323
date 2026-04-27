@@ -30,6 +30,7 @@ import {
 // Components
 import FAQ from "./components/FAQ";
 import LanguageSelector from "./components/LanguageSelector";
+import ThemeToggle from "./components/ThemeToggle";
 
 // Translations
 import { translations } from "./i18n/translations";
@@ -151,6 +152,7 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
   const [isMobile, setIsMobile] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   // Guest System + Document Title
   useEffect(() => {
@@ -168,6 +170,15 @@ export default function App() {
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
+
+  // Theme Toggle Effect
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.remove("light-mode");
+    } else {
+      document.body.classList.add("light-mode");
+    }
+  }, [isDark]);
 
   // i18n Hook
   const t = (key: string) => {
@@ -194,8 +205,9 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#0B0D10] font-sans">
       <div className="w-full">
-        {/* Header (Language Selector) */}
-        <div className="flex justify-end px-4 py-2">
+        {/* Header (Language Selector + Theme Toggle) */}
+        <div className="flex justify-end items-center gap-2 px-4 py-2">
+          <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
           <LanguageSelector lang={lang} setLang={setLang} />
         </div>
 
