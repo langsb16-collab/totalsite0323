@@ -249,19 +249,33 @@ export default function App() {
           </div>
         </motion.section>
 
-        {/* Search + Filter */}
+        {/* Search + R&D Button */}
         <div className="px-4 mb-3 space-y-3">
-          <div className="relative w-full">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" size={24} />
-            <input
-              type="text"
-              placeholder={t("button.search") + "..."}
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="w-full rounded-lg border border-white/10 bg-[#111] p-4 pl-14 text-lg text-white outline-none transition-all focus:border-[#6C5CE7]/50"
-            />
+          <div className="flex items-center gap-3">
+            {/* Search Box - Fixed 200px */}
+            <div className="relative" style={{ width: "200px" }}>
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" size={20} />
+              <input
+                type="text"
+                placeholder={t("button.search") + "..."}
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                className="w-full rounded-lg border border-white/10 bg-[#161618] p-3 pl-10 text-sm text-white outline-none transition-all focus:border-[#6C5CE7]/50"
+              />
+            </div>
+
+            {/* R&D 개발범위 Button */}
+            <a
+              href="https://youtu.be/GSGFA8SuCBk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-3 bg-[#2a2a2e] text-white rounded-lg border border-[#444] text-sm font-medium transition-all hover:bg-[#3d3d42] hover:border-[#666] whitespace-nowrap"
+            >
+              R&D 개발범위
+            </a>
           </div>
 
+          {/* Category Filter */}
           <div className="flex flex-wrap justify-center gap-1.5">
             {categories.map((cat) => (
               <button
