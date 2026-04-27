@@ -111,19 +111,20 @@ function Card({ item, index, t }: CardProps) {
     >
       <div className={`absolute -inset-0.5 rounded-2xl bg-gradient-to-br ${style.gradient} opacity-0 blur-lg transition duration-500 group-hover:opacity-10`} />
       
-      <div className="relative flex h-full flex-col rounded-2xl border border-white/10 bg-[#0F1115] p-3 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-[#16191E] hover:shadow-xl hover:shadow-purple-500/20">
-        <div className="mb-3 flex items-center justify-between">
-          <div className={`rounded-lg bg-white/5 p-2 ${style.accent} transition-colors duration-300 group-hover:bg-white/10`}>
-            <Icon size={18} />
+      <div className="relative flex h-full flex-col rounded-2xl border border-white/10 bg-[#0F1115] p-4 transition-colors duration-300 group-hover:border-white/20 group-hover:bg-[#16191E] hover:shadow-xl hover:shadow-purple-500/20">
+        {/* Card Header - Icon + Title in Row */}
+        <div className="mb-3 flex items-center gap-3">
+          <div className={`rounded-lg bg-white/5 p-2.5 ${style.accent} transition-colors duration-300 group-hover:bg-white/10`}>
+            <Icon size={22} />
           </div>
-          <ExternalLink size={14} className="text-gray-600 transition-colors duration-300 group-hover:text-white" />
+          <h3 className="compact-headline text-base font-bold tracking-tight text-white flex-grow">
+            {name}
+          </h3>
+          <ExternalLink size={16} className="text-gray-600 transition-colors duration-300 group-hover:text-white flex-shrink-0" />
         </div>
 
-        <h3 className="compact-headline mb-1 text-sm font-semibold tracking-tight text-white">
-          {name}
-        </h3>
-
-        <p className="mb-3 flex-grow text-xs leading-relaxed text-gray-400 line-clamp-2">
+        {/* Description with better readability */}
+        <p className="mb-4 flex-grow text-sm leading-relaxed text-gray-300 line-clamp-2">
           {desc}
         </p>
 
@@ -154,7 +155,7 @@ export default function App() {
   // Guest System + Document Title
   useEffect(() => {
     // Set document title
-    document.title = "플랫폼 인포메이션";
+    document.title = "AI LINK SOFT (에이아이 링크 소프트)";
     
     let uid = localStorage.getItem("uid");
     if (!uid) {
