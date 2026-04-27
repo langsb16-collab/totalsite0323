@@ -212,36 +212,37 @@ export default function App() {
           </motion.div>
         </header>
 
-        {/* Company Info Card */}
+        {/* Company Info Card - Compact Version */}
         <motion.section 
-          className="px-4 mb-6 max-w-7xl mx-auto"
+          className="px-4 mb-4 mx-auto"
+          style={{ maxWidth: "80%", width: "960px" }}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="company-info-pulse bg-[#161618] border border-white/10 rounded-2xl p-6">
-            <h3 className="text-2xl font-bold text-white mb-4">
+          <div className="company-info-pulse bg-[#161618] border border-white/10 rounded-xl p-4">
+            <h3 className="text-xl font-bold text-white mb-3">
               AI LINK SOFT (에이아이 링크 소프트)
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-300">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-300 text-sm">
               <p className="flex items-center">
-                <span className="inline-block w-24 font-semibold text-gray-400">대표</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">대표</span>
                 <span>박진홍</span>
               </p>
               <p className="flex items-center">
-                <span className="inline-block w-24 font-semibold text-gray-400">연락처</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">연락처</span>
                 <span>010-3391-3697</span>
               </p>
               <p className="flex items-center">
-                <span className="inline-block w-24 font-semibold text-gray-400">이메일</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">이메일</span>
                 <span>soma8284@hanmail.net</span>
               </p>
               <p className="flex items-center">
-                <span className="inline-block w-24 font-semibold text-gray-400">업종</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">업종</span>
                 <span>정보통신업</span>
               </p>
               <p className="flex items-center md:col-span-2">
-                <span className="inline-block w-24 font-semibold text-gray-400">사업내용</span>
+                <span className="inline-block w-20 font-semibold text-gray-400">사업내용</span>
                 <span>응용소프트웨어 개발 및 공급원</span>
               </p>
             </div>
